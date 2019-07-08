@@ -55,6 +55,6 @@ ORDER BY SUM(grand_total) DESC;
 
 SELECT name, quantity, quantity * cost
 FROM invoices JOIN additional_charges_to_invoices on fk_invoice_id = invoice_id JOIN additional_charges on fk_charges_id = charges_id
-WHERE invoice_id = 3 
+WHERE invoice_id = 3;
 
 ----
